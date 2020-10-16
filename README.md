@@ -5,10 +5,12 @@ Add new location:
 3) stop and rm docker containers
 4) ./start.sh
 
-
 For install run:
 docker pull webpagetest/server
 For rebuild run:
-docker build -t webpagetest_server .
+docker build --no-cache -t webpagetest_server .
+
+NOTE: you need to download settings.yml, location.ini FROM github repo ( They are in .gitignore for security reasons )
+https://github.com/WPO-Foundation/webpagetest/tree/master/www/settings
 
 
