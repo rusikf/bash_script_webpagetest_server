@@ -7,10 +7,11 @@ Add new location:
 
 For install run:
 docker pull webpagetest/server
+cp locations-sample.ini locations.ini
+cp settings-sample.ini settings.ini
+
 For rebuild run:
 docker build --no-cache -t webpagetest_server .
 
-NOTE: you need to download settings.yml, location.ini FROM github repo ( They are in .gitignore for security reasons )
-https://github.com/WPO-Foundation/webpagetest/tree/master/www/settings
 
 
